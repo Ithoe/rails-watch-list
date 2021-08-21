@@ -1,6 +1,8 @@
 <h2>Lists of Movies:</h2>
 
   <tbody>
+
+<!-- for face detection -->
     <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg" %>
     <% @lists.each do |list| %>
       <tr>
@@ -11,6 +13,7 @@
     <div>
       <%= link_to 'Create new List', new_list_path, class: 'btn btn-danger'%>
     </div>
-
-
   </tbody>
+
+<%= cl_image_tag("dkcpoy7f5namtvtzsjyv",
+      width: 400, height: 300, crop: :fill) %>
